@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="min-h-full">
 
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,53 @@
     <title>Tailwind CSS</title>
 </head>
 
-<body>
+<body class="flex flex-col justify-around bg-sky-950 mx-auto min-h-screen">
+    <header
+        class="flex gap-x-4 justify-between items-center border border-4 border-slate-400 rounded p-3 mt-1 mx-10 md:mx-40 lg:mx-72 xl:mx-96">
+        <h1>
+            <img src="assets/images/logo-bonus.svg" alt="">
+        </h1>
+        <div class="text-center bg-white p-5 rounded">
+            <p class="uppercase text-sky-700">Score</p>
+            <p class="text-6xl text-neutral-600">14</p>
+        </div>
+    </header>
+    <main class="mt-10 container mx-auto w-80 p-1" style="
+        max-width: 328px;
+        min-width: 250px;
+        max-height: 313px;
+        background-size: cover;
+        background: url('assets/images/bg-pentagon.svg') no-repeat center; !important">
+        <div>
+            <div>
+                <img class=" relative left-[6.0rem] bottom-8 p-5 bg-white border-[15px] border-yellow-500"
+                    style="border-radius: 50%;" src="assets/images/icon-scissors.svg" alt="">
+            </div>
+        </div>
+        <div class="flex justify-between relative bottom-16">
+            <div class="p-5 bg-white border-[15px] border-cyan-500  flex items-center relative right-3 sm:right-10"
+                style="border-radius: 50%;">
+                <img src="assets/images/icon-spock.svg" alt="">
+            </div>
+            <div class="p-5 bg-white border-[15px] border-blue-700  flex items-center  relative left-3 sm:left-10"
+                style="border-radius: 50%;">
+                <img src="assets/images/icon-paper.svg" alt="">
+            </div>
+        </div>
+        <div class="flex justify-between relative bottom-8">
+            <div class="relative bottom-5 left-5 sm:bottom-0 sm:left-0 p-5 bg-white border-[15px] border-indigo-700  flex items-center"
+                style="border-radius: 50%;">
+                <img src="assets/images/icon-lizard.svg" alt="">
+            </div>
+            <div class="relative bottom-5 right-5 p-5 sm:bottom-0 sm:right-0 bg-white border-[15px] border-red-700 flex items-center"
+                style="border-radius: 50%;">
+                <img src="assets/images/icon-rock.svg" alt="">
+            </div>
+        </div>
+    </main>
+    <footer class="mt-20 mb-10 text-center">
+        <button class="border border-slate-500 text-white rounded text-center px-10 py-2 uppercase">Rules</button>
+    </footer>
 
 </body>
 
